@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="607.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.addPartController">
+   <children>
+      <Text layoutX="68.0" layoutY="90.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add Part">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Text>
+      <RadioButton fx:id="inHouse" layoutX="225.0" layoutY="74.0" mnemonicParsing="false" onMouseClicked="#inHouseClick" selected="true" text="In-House" />
+      <RadioButton fx:id="outSourced" layoutX="366.0" layoutY="74.0" mnemonicParsing="false" onMouseClicked="#outSourcedClick" text="Outsourced" />
+      <TextField fx:id="addPartId" disable="true" layoutX="186.0" layoutY="154.0" prefHeight="25.0" prefWidth="158.0" promptText="Auto Gen-Disabled" />
+      <TextField fx:id="addNameId" layoutX="186.0" layoutY="196.0" prefHeight="25.0" prefWidth="158.0" />
+      <TextField fx:id="addPartInv" layoutX="186.0" layoutY="234.0" prefHeight="25.0" prefWidth="158.0" />
+      <TextField fx:id="addPartPrice" layoutX="186.0" layoutY="270.0" prefHeight="25.0" prefWidth="158.0" />
+      <TextField fx:id="addPartMax" layoutX="186.0" layoutY="310.0" prefHeight="25.0" prefWidth="158.0" />
+      <TextField fx:id="addPartSwitch" layoutX="186.0" layoutY="350.0" prefHeight="25.0" prefWidth="158.0" />
+      <TextField fx:id="addPartMin" layoutX="415.0" layoutY="310.0" />
+      <Button fx:id="addPartSave" layoutX="266.0" layoutY="417.0" mnemonicParsing="false" onMouseClicked="#addPartSave" text="Save" />
+      <Button fx:id="addPartCancel" layoutX="385.0" layoutY="417.0" mnemonicParsing="false" onMouseClicked="#addPartCancel" text="Cancel" />
+      <Text layoutX="68.0" layoutY="172.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ID" />
+      <Text layoutX="68.0" layoutY="212.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name" />
+      <Text layoutX="366.0" layoutY="326.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Min" />
+      <Text fx:id="inOrOut" layoutX="68.0" layoutY="368.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Machine ID" />
+      <Text layoutX="68.0" layoutY="326.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Max" />
+      <Text layoutX="68.0" layoutY="286.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Price/Cost" />
+      <Text layoutX="68.0" layoutY="252.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Inv" />
+   </children>
+</AnchorPane>
